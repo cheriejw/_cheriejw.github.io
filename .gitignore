@@ -15,3 +15,8 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+
+# jekyll
+_site
+.sass-cashe
+.jekyll-metadata
