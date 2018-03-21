@@ -1,9 +1,9 @@
 <section>
   
-  <h3>About Myself</h3>
+  <h3 id="about">About Myself</h3>
 
   <div class="face-lockup">
-    <div class="profile-pic"></div>
+    <div class="profile-pic" style="background-image: url(/assets/img/{{site.profile-pic}})"></div>
 
     <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
     <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
@@ -12,49 +12,49 @@
   </div>
 
   <div class="blurb">
-    <p><strong>Some sentence about yourself here.</strong> blahblahblahshdkjsh jsdhf kjsa hdjf ksjdhk fsdjh fhsahfjkha eufehi tbfbvebifugwaoscjxbbfre.</p>
+    {{ site.blurb }}
   </div>
 
   <div class="skill-lockup">
     
     <div class="skill-unit">
       <div class="skill-label">Visual Design</div>
-      <div class="skill-icons">
+      <div class="skill-icons skill-{{site.skill-1}}">
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
 
     <div class="skill-unit">
       <div class="skill-label">Frontend Web Development</div>
-      <div class="skill-icons">
+      <div class="skill-icons skill-{{site.skill-2}}">
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
 
     <div class="skill-unit">
       <div class="skill-label">Programming</div>
-      <div class="skill-icons">
+      <div class="skill-icons skill-{{ site.skill-3 }}">
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
 
     <div class="skill-unit">
       <div class="skill-label">Database/Server-side Development</div>
-      <div class="skill-icons skill-8">
+      <div class="skill-icons skill-{{site.skill-4}}">
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
 
     <div class="skill-unit">
       <div class="skill-label">Communication</div>
-      <div class="skill-icons">
+      <div class="skill-icons skill-{{site.skill-5}}">
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
 
     <div class="skill-unit">
       <div class="skill-label">Progressive</div>
-      <div class="skill-icons">
+      <div class="skill-icons skill-{{site.skill-6}}">
         <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>

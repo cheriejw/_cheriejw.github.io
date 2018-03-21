@@ -1,21 +1,14 @@
-h3
-  @extend %small-bold
-  color: $accent-light
-  text-align: center
-  padding: 100px 0 30px
-
 .face-lockup
   max-width: 700px
   display: flex
   flex-direction: row
-  justify-content: space-around
+  justify-content: space-between
   margin: 0 auto
   align-items: center
 
   .profile-pic
     +size(200px)
     border-radius: 50%
-    background: url(/assets/img/face.jpg)
     background-position: center center
     background-repeat: no-repeat
     background-size: 100%
@@ -59,12 +52,19 @@ h3
       margin: 10px
 
 .blurb
-  max-width: 620
+  width: 620px
   padding: 0 15px
   margin: 50px auto
   font-size: 24px
   text-align: center
-  font-weight: 300
+  font-weight: 400
+
+  p
+    color: rgba(0,0,0,0.7)
+
+    b
+      color: rgba(0,0,0,0.9)
+      font-weight: 500
 
 .skill-lockup
   max-width: 700px
@@ -86,13 +86,16 @@ h3
       background-color: $accent
 
     @for $i from 1 through 10 //generates
-      &.skill-#{$i} span:nth-child(n+#{$i})
+      &.skill-#{$i} span:nth-child(n+#{$i + 1})
         @extend %skill-color
 
 @media screen and (max-width: 541px)
   .skill-lockup
     width: 270px
 
+  .blurb
+    width: 300 px
+    font-size: 20px
 
 
 
