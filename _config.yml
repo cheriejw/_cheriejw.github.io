@@ -17,6 +17,14 @@ title: Cherie Woo
 email: your-email@example.com
 description: Software Developer || Artist
 
+skill-1: 2
+skill-2: 3
+skill-3: 6
+skill-4: 9
+skill-5: 7
+skill-6: 8
+
+
 # Build settings
 markdown: kramdown
 theme: minima

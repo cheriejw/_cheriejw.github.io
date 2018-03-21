@@ -21,6 +21,8 @@ sass:
 - text-transform
 - clear
 - `.classname`,`tagname` 
+- [CSS presidence](https://stackoverflow.com/questions/25105736/what-is-the-order-of-precedence-for-css)
+- order
 
 #### SASS Syntax (- uses indents vs SCSS - uses brackets)
 - `+size(50px)`
@@ -28,3 +30,6 @@ sass:
 - `&:hover //means on hover`
 - `@extend %small-bold`
 - indents are super important.
+- `[class^="icon-"]` Anything that includes "icon-"
+- @media screen and (max-width: 650px)
+- @for $i from 1 through 10 //generates --> &.skill-#{$i} span:nth-child(n+#{$i})
