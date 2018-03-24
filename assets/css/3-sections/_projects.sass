@@ -1,0 +1,47 @@
+.alt-section
+	background: $bgcolor
+
+.thumb-container
+	max-width: 960px
+	margin: 0px auto
+	padding-bottom: 100px
+	+clearfix //...and then clearfixed.
+
+	.thumb-unit
+		display: block //inline anchor tag is inline, height and width disable.
+		width: 25%
+		float: left //float with block display...
+		position: relative
+		padding-top: 16% //height
+		overflow: hidden
+
+		@media screen and (max-width: 760px)
+			width: 50%
+			padding-top: 20%
+
+		background:
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+		.thumb-overlay
+			+position(absolute, 100% 0px null 0px) //because parent is relative; 100% is hidden
+			height: 100%
+			background: fade-out($accent, 0.1)
+			transition: .15s
+			text-align: center
+			display: flex
+			align-items: center
+			justify-content: center
+
+			strong
+				display: block //inline normall block will have padding
+				padding: 0 20px
+				color: white
+				font-weight: 300
+				text-transform: uppercase
+				font-size: 24
+				line-height: 1.2 //tighter and closer together
+
+		&:hover .thumb-overlay
+			+position(absolute, 0% 0px null 0px)

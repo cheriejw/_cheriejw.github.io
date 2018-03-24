@@ -1,6 +1,7 @@
 header
-	height: 450px
+	height: 500px
 	@extend %bg-img
+	background-image: url(/assets/img/#{$logo-path}), url(/assets/img/#{$bg-path})
 
 	.logo
 		+size(50px)
@@ -48,3 +49,6 @@ header
 		letter-spacing: 0.03em
 		line-height: 1
 
+@media screen and (max-width: 650px)
+	header
+		height: 400px

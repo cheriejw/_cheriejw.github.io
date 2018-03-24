@@ -1,3 +1,14 @@
+### To Run on Local
+
+1) Install [Jekyll.](https://jekyllrb.com)
+2) Clone this repo.
+
+Peronally what I run (will listen for saves and config files too!):
+
+```bash
+jekyll serve -w --watch
+```
+
 ### Tutorial Notes
 Following [DevTips Jekyll Tutorial](https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI)
 _technology stack choices(sass instead of scss, flexbox, bourbon - sass toolset)_

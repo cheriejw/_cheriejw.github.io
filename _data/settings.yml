@@ -1,0 +1,40 @@
+# Portfolio Settings
+
+# Header Section
+title: Cherie Woo
+email: cheriejawoo@yahoo.com
+description: Software Developer || Artist
+
+menu:
+- {name: Shop My Crafts, url: '#shop', }
+- {name: About Me, url: '#about'}
+- {name: Projects, url: '#projects'}
+- {name: Work, url: '#work'}
+- {name: Resume, url: '#resume'}
+- {name: Contact, url: '#contact'}
+
+logo: 'logo.svg'
+bg-img: 'sitting.jpg'
+
+# About Section
+avatar: 'face.jpg'
+blurb: <p><strong>Hi, my name is Cherie</strong> and I specialize in <b>Web Development</b>, but I hold interest in many computer science related subjects. I am a very <b>happy-go-lucky</b> kind of human and outside of code I dabble in art!</p>
+
+skills:
+- {name: Visual Design, value: 7}
+- {name: Frontend Development, value: 8}
+- {name: Programming, value: 6}
+- {name: Database/Server-side, value: 4}
+- {name: Communication, value: 7}
+- {name: Progressive, value: 6}
+
+# Projects Section
+projects: 
+- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', path: 'Laika/asteroid.png'}
+- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', path: 'Laika/asteroid.png'}
+- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', path: 'Laika/asteroid.png'}
+- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', path: 'Laika/asteroid.png'}
+- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', path: 'Laika/asteroid.png'}
+- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', path: 'Laika/asteroid.png'}
+- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', path: 'Laika/asteroid.png'}
+- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', path: 'Laika/asteroid.png'}
