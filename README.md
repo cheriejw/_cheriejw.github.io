@@ -3,7 +3,7 @@
 1) Install [Jekyll.](https://jekyllrb.com)
 2) Clone this repo.
 
-Peronally what I run (will listen for saves and config files too!):
+Peronally what I run when I develop (will listen for saves and config files too!):
 
 ```bash
 jekyll serve -w --watch
