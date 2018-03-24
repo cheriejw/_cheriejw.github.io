@@ -44,3 +44,4 @@ sass:
 - `[class^="icon-"]` Anything that includes "icon-"
 - @media screen and (max-width: 650px)
 - @for $i from 1 through 10 //generates --> &.skill-#{$i} span:nth-child(n+#{$i})
+- [liquid for designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
