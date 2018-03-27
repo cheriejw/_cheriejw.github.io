@@ -1,19 +1,34 @@
-<section class="alt-section" id="projects">
+<section class="section-project" id="projects">
 	
 	<h3>Projects</h3>
 
-	<div class="thumb-container">
-		{% for project in site.data.settings.projects %}
+	<div class="project-belt">
 
-		<a href="{{project.url}}" class="thumb-unit" style="background-image: url(/assets/img/projects/{{project.path}})">
-			<div class="thumb-overlay">
-				<strong>{{project.name}}</strong>
-				<div class="zoom-icon"></div>
+		<div class="thumb-wrap">
+			<div class="thumb-container">
+				{% for project in site.data.settings.projects %}
+				<div class="thumb-unit" style="background-image: url(/assets/img/projects/{{project.path}})">
+					<div class="thumb-overlay">
+						<strong>{{project.name}}</strong>
+						<div class="zoom-icon"></div>
+					</div>
+				</div>
+				{% endfor %}
 			</div>
-		</a>
+		</div>
 
-		{% endfor %}
+		<div class="project-wrap">
+			<div class="project-container">
+				<div class="project-return">{% include icons/icon-back.html %}</div>
+				<h4>Project Description</h4>
+				<div style="width: 500px; height: 600px; background: #ccc;"></div>
+				<p>Some text to test some things out you know what I mean...</p>
+				<div style="width: 500px; height: 600px; background: #ccc;"></div>
+				<p>Some text to test some things out you know what I mean...</p>
+				<div style="width: 500px; height: 600px; background: #ccc;"></div>
+				<p>Some text to test some things out you know what I mean...</p>
+			</div>
+		</div>
 	</div>
-
 
 </section>

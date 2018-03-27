@@ -25,6 +25,8 @@ sass:
 
 - Make SVG, HTML files to style over SASS and include in HTML with Jekyll using `{% include %}`
 
+- Didn't get to fully explore this subject of animations, may go back later. [From this video](https://www.youtube.com/watch?v=PubNB94BLFc&index=12&list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI), also checkout [bounce.js](http://bouncejs.com/)
+
 #### CSS Reference (used that I was not super familar with)
 - margin is outside border, padding is inside
 - float
@@ -34,9 +36,10 @@ sass:
 - `.classname`,`tagname` 
 - [CSS presidence](https://stackoverflow.com/questions/25105736/what-is-the-order-of-precedence-for-css)
 - order
+- perspective (where you are from the site.)
 
 #### SASS Syntax (- uses indents vs SCSS - uses brackets)
-- `+size(50px)`
+- `+size(50px)` + is mixin? these are bourbon mixin.
 - `+clearfix //bourbon`
 - `&:hover //means on hover`
 - `@extend %small-bold`
@@ -45,3 +48,4 @@ sass:
 - @media screen and (max-width: 650px)
 - @for $i from 1 through 10 //generates --> &.skill-#{$i} span:nth-child(n+#{$i})
 - [liquid for designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
+

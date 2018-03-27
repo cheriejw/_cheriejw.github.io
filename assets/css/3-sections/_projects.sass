@@ -1,5 +1,15 @@
-.alt-section
-	background: $bgcolor
+.section-project
+	overflow-x: hidden //no-sideway scroll.
+
+.project-belt
+	width: 200%
+	position: relative
+	left: 0%
+	transition: .2s
+
+.thumb-wrap, .project-wrap
+	width: 50%
+	float: left
 
 .thumb-container
 	max-width: 960px
@@ -45,3 +55,43 @@
 
 		&:hover .thumb-overlay
 			+position(absolute, 0% 0px null 0px)
+
+.project-container
+	max-width: 600px
+	margin: 0px auto
+	position: relative //without this absolute svg went with project-belt display
+	display: none //so can toggle show and hide
+
+	h4
+		color: $accent
+		font-weight: 300
+		text-transform: uppercase
+		font-size: 24
+		line-height: 1.2 //tighter and closer together
+		margin: 0 0 20px
+
+	img
+		max-width: 100%
+		margin-bottom: 20px
+
+	.project-return
+		+size(40px)
+		cursor: pointer
+		opacity: 0.5
+		+position(absolute, -8px null null -60px)
+
+
+		path
+			fill: rgba(0,0,0,0.7)
+
+		&:hover 
+			opacity: 1
+
+@media (max-width: 740px)
+	.project-container
+
+		.project-return
+			left: 0px
+
+		h4
+			margin-left: 60px
