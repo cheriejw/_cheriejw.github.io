@@ -65,7 +65,7 @@ There is no `--save` like in npm for gem... can use gemrat though.
 
 ---
 
-### Jekyll Sample Post (from `_posts` was having issues with script)
+### Jekyll Sample Post (from `_posts`)
 ```
 ---
 layout: post
