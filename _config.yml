@@ -22,4 +22,4 @@ sass:
 
 exclude: 
   - script/ # For continuous integeration script
-  - [vendor] # "Travis bundles all gems in the vendor directory on its build servers, which Jekyll will mistakenly read and explode on."
+  - vendor/ # "Travis bundles all gems in the vendor directory on its build servers, which Jekyll will mistakenly read and explode on."
