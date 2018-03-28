@@ -19,3 +19,6 @@ plugins:
 sass:
   sass_dir: assets/css
   style: :nested
+
+exclude: 
+  - script/ # For continuous integeration script
