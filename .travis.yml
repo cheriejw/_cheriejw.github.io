@@ -1,1 +1,24 @@
+language: ruby # Access to Bundler, RubyGems, & Ruby runtime.
+rvm:
+  - 2.3.3
 
+before_script:
+  - chmod +x ./script/cibuild
+
+# Assumed bundler is being used? 'install' runs bundle install?
+script: ./script/cibuild # convention for more test scripts.
+# install: gem install jekyll html-proofer
+# script: jekyll build && html proofer ./_site # any shell cmd
+
+branches:
+  only:
+    - master  # test master branch
+    # - /pages-(.*)/ # test every branch which starts with "pages-"
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speed installation of html-proofer?
+
+exclude: [vendor] # "Travis bundles all gems in the vendor directory on its build servers, which Jekyll will mistakenly read and explode on."
+
+sudo: false # routes to container-based infrastructure for faster build

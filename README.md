@@ -9,6 +9,8 @@ Peronally what I run when I develop (will listen for saves and config files too!
 jekyll serve -w --watch
 ```
 
+---
+
 ### Tutorial Notes
 Following [DevTips Jekyll Tutorial](https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI)
 _technology stack choices(sass instead of scss, flexbox, bourbon - sass toolset)_
@@ -48,4 +50,20 @@ sass:
 - @media screen and (max-width: 650px)
 - @for $i from 1 through 10 //generates --> &.skill-#{$i} span:nth-child(n+#{$i})
 - [liquid for designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
+
+---
+
+### Continuous Integration with Travis
+Followed [this](https://jekyllrb.com/docs/continuous-integration/travis-ci/) starter template kind of thing...
+
+Could try out the [rakefile](https://github.com/ruby/rake) later (ruby make) would need to `gem install html-proofer`
+
+Used html-proofer and [nokogiri](http://www.rubydoc.info/github/sparklemotion/nokogiri) - [if ever needed to add to gemfile](https://stackoverflow.com/questions/29782968/how-to-gem-install-nokogiri-use-system-libraries-via-gemfile) use `bundle config build.nokogiri --use-system-libraries`
+
+### Ruby-related Notes
+There is no `--save` like in npm for gem... can use gemrat though.
+
+
+
+
 
