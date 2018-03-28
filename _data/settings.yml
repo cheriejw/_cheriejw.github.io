@@ -6,12 +6,12 @@ email: cheriejawoo@yahoo.com
 description: Software Developer || Artist
 
 menu:
-- {name: Shop My Crafts, url: '#shop', }
+# - {name: Shop My Crafts, url: '#shop', }
 - {name: About Me, url: '#about'}
 - {name: Projects, url: '#projects'}
-- {name: Work, url: '#work'}
-- {name: Resume, url: '#resume'}
-- {name: Contact, url: '#contact'}
+# - {name: Work, url: '#work'}
+# - {name: Resume, url: '#resume'}
+# - {name: Contact, url: '#contact'}
 
 logo: 'logo.svg'
 bg-img: 'sitting.jpg'
