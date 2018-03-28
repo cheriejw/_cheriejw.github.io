@@ -19,6 +19,4 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speed installation of html-proofer?
 
-exclude: [vendor] # "Travis bundles all gems in the vendor directory on its build servers, which Jekyll will mistakenly read and explode on."
-
 sudo: false # routes to container-based infrastructure for faster build
