@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/cheriejw/cheriejw.github.io.svg?branch=master)](https://travis-ci.org/cheriejw/cheriejw.github.io)
 ### To Run on Local
 
 1) Install [Jekyll.](https://jekyllrb.com)
