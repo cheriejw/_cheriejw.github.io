@@ -53,7 +53,7 @@ sass:
 
 ---
 
-### Continuous Integration with Travis
+### Continuous Integration with [Travis](https://docs.travis-ci.com/user/languages/ruby/)
 Followed [this](https://jekyllrb.com/docs/continuous-integration/travis-ci/) starter template kind of thing...
 
 Could try out the [rakefile](https://github.com/ruby/rake) later (ruby make) would need to `gem install html-proofer`
