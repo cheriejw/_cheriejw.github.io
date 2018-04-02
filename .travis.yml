@@ -2,6 +2,9 @@ language: ruby # Access to Bundler, RubyGems, & Ruby runtime.
 rvm:
   - 2.3.3
 
+before_install:
+  - gem update bundler
+
 before_script:
   - chmod +x ./script/cibuild
 
