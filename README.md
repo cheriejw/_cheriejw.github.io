@@ -7,6 +7,8 @@
 Peronally what I run when I develop (will listen for saves and config files too!):
 
 ```bash
+bundle install
+
 jekyll serve -w --watch
 ```
 
@@ -96,5 +98,5 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 ```
 
 
-
-
+### Customizing Rules
+- Project name in `/assets/img/projects/` has to be the same as project name in `/projects/` HTML file, so JQuery can load the right project.

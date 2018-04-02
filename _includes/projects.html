@@ -7,7 +7,7 @@
 		<div class="thumb-wrap">
 			<div class="thumb-container">
 				{% for project in site.data.settings.projects %}
-				<div class="thumb-unit" style="background-image: url(/assets/img/projects/{{project.path}})">
+				<div class="thumb-unit" data-folder="{{project.folder}}" style="background-image: url(/assets/img/projects/{{project.folder}}/{{project.thumb}})">
 					<div class="thumb-overlay">
 						<strong>{{project.name}}</strong>
 						<div class="zoom-icon"></div>
@@ -20,13 +20,8 @@
 		<div class="project-wrap">
 			<div class="project-container">
 				<div class="project-return">{% include icons/icon-back.html %}</div>
-				<h4>Project Description</h4>
-				<div style="width: 500px; height: 600px; background: #ccc;"></div>
-				<p>Some text to test some things out you know what I mean...</p>
-				<div style="width: 500px; height: 600px; background: #ccc;"></div>
-				<p>Some text to test some things out you know what I mean...</p>
-				<div style="width: 500px; height: 600px; background: #ccc;"></div>
-				<p>Some text to test some things out you know what I mean...</p>
+				<h4 class="project-title">Project Description</h4>
+				<div class="project-load"></div>
 			</div>
 		</div>
 	</div>
