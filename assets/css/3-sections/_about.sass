@@ -9,10 +9,11 @@
   .avatar
     +size(200px)
     border-radius: 50%
-    background-image: url(/assets/img/#{$avatar-path})
-    background-position: center center
-    background-repeat: no-repeat
-    background-size: 100%
+    background:
+      image: url(/assets/img/#{$avatar-path})
+      position: center center
+      repeat: no-repeat
+      size: 100%
     order: 3
 
   [class^="icon-"]
@@ -42,15 +43,16 @@
 
     .avatar
       display: block
-      background-position: center center
-      background-repeat: no-repeat
+      background:
+        position: center center
+        repeat: no-repeat
       width: 90vw
       height: 90vw
       //padding: 50% 0
       margin: 30px auto 0 auto
 
     [class^="icon-"]
-      margin: 10px
+      margin: 10px 9%
 
 .blurb
   width: 620px

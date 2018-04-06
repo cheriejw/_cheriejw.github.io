@@ -1,16 +1,16 @@
 <header id="header">
+	<div class="overlay">
+		<div class="logo"></div>
 
-	<div class="logo"></div>
+		<nav>
+			{% for item in site.data.settings.menu %}
 
-	<nav>
-		{% for item in site.data.settings.menu %}
+				<a href="{{item.url}}">{{item.name}}</a>
+			
+			{% endfor %}
+		</nav>
 
-			<a href="{{item.url}}">{{item.name}}</a>
-		
-		{% endfor %}
-	</nav>
-
-	<h1><span>{{site.data.settings.title}}</span></h1>
-	<p class="kicker">{{site.data.settings.description}}</p>
-
+		<h1><span>{{site.data.settings.title}}</span></h1>
+		<p class="kicker">{{site.data.settings.description}}</p>
+	</div>
 </header>

@@ -14,27 +14,33 @@ menu:
 - {name: Contact, url: '#contact'}
 
 logo: 'logo.svg'
-bg-img: 'sitting.jpg'
+bg-img: 'grass.jpg'
 
 # About Section
 avatar: 'face.jpg'
-blurb: <p><strong>Hi, my name is Cherie</strong> and I specialize in <b>Web Development</b>, but I hold interest in many computer science related subjects. I am a very <b>happy-go-lucky</b> kind of human and outside of code I dabble in art!</p>
+# <p><strong>Hi, my name is Cherie</strong> and I specialize in <b>Web Development</b>, but I hold interest in many computer science related subjects. I am a very <b>happy-go-lucky</b> kind of human and outside of code I dabble in art!</p><p><i>Please note this landing page is still development in progress as I update the content.</i></p>
+blurb: 
+  '**Hi, my name is Cherie** and I specialize in **Web Development**, 
+  but I hold interest in many computer science related subjects. 
+  I am a very happy-go-lucky kind of human and outside of code I dabble in art!
+  <br><br>
+  _Please note this landing page is still development in progress as I update the content._'
 
 skills:
-- {name: Visual Design, value: 7}
+- {name: Visual Design, value: 8}
 - {name: Frontend Development, value: 8}
-- {name: Programming, value: 6}
-- {name: Database/Server-side, value: 4}
+- {name: Programming, value: 7}
+- {name: Database/Server-side, value: 6}
 - {name: Communication, value: 7}
-- {name: Progressive, value: 6}
+- {name: Progressive, value: 7}
 
 # Projects Section
 projects: 
 - {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
 - {name: KibbleCount, description: 'Minimize the Cost, Constrain the Calories with Linear Programming.', url: 'https://devpost.com/software/kibblecount', folder: 'kibblecount', thumb: 'homepage.jpg'}
 - {name: Free-Hands Input, description: 'Using intuitive controls with gestures and voice, control a web browser and many other applications.', url: 'https://devpost.com/software/freehandsbrowser', folder: 'handsfreebrowser', thumb: 'handsfree-demo.jpg'}
-- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
-- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
-- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
-- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
-- {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
+- {name: SharkLab Interactive Data Visualization, description: Interactive Data Visualization web application, url: 'https://github.com/sopanhavuth-aka-sam/ATDDproject', folder: 'sharklab', thumb: 'shark-webapp.png'}
+# - {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
+# - {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
+# - {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
+# - {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
