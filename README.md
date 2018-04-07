@@ -100,3 +100,9 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 ### Customizing Rules
 - Project name in `/assets/img/projects/` has to be the same as project name in `/projects/` HTML file, so JQuery can load the right project.
+
+### Links
+- [Ruby Default TravisCI Config](https://docs.travis-ci.com/user/languages/ruby/)
+- [DataDog Monitoring Dashboard](https://app.datadoghq.com/dashboard/lists)
+- [AWS Implementation Guides](https://aws.amazon.com/getting-started/projects/): *Will be adding some dynamic features in future*
+- [Need to somehow get latency from client to my server, request drops, JS sending back client data](https://www.shivarweb.com/2977/what-does-google-analytics-do/)
