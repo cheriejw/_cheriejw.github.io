@@ -1,15 +1,10 @@
 header
 	height: 500px
 	@extend %bg-img
-	background-image: url(/assets/img/#{$logo-path}), url(/assets/img/#{$bg-path})
-
-	.logo
-		+size(50px)
-		float: left
-		margin: 10px 0 0 30px
-		
-		path
-			fill: rgba(0,0,0,0.7)
+	background:
+		image: url(/assets/img/#{$logo-path}), url(/assets/img/#{$bg-path})
+		size: 55px 55px, cover
+		position: 25px 15px, 50% 50%
 
 	nav
 		float: right

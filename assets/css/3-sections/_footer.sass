@@ -1,6 +1,9 @@
 footer
   @extend %bg-img
-  background-image: url(/assets/img/#{$logo-path}), url(/assets/img/#{$bg-path})
+  background:
+    image: url(/assets/img/#{$logo-path}), url(/assets/img/#{$bg-path})
+    size: 70px 70px, cover
+    position: 20px 35px, 50% 50%
 
   .lockup
     padding: 50px 30px

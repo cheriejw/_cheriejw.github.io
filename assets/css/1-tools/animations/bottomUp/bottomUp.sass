@@ -1,0 +1,14 @@
+/*
+	Animation: bottomUp
+	Description: Animation comes up drop the bottom in a two-dementional space.
+*/
+// Initial Class
+%animationstart_bottomUp
+	+position(absolute, 100% 0px null 0px) //because parent is relative; 100% is hidden
+	height: 100%
+	background: fade-out($accent, 0.1)
+	transition: .15s
+
+// Animation Class
+%bottomUp
+	+position(absolute, 0% 0px null 0px)

@@ -31,6 +31,7 @@ sass:
 - Make SVG, HTML files to style over SASS and include in HTML with Jekyll using `{% include %}`
 
 - Didn't get to fully explore this subject of animations, may go back later. [From this video](https://www.youtube.com/watch?v=PubNB94BLFc&index=12&list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI), also checkout [bounce.js](http://bouncejs.com/)
+- [Supporting no Javascript browsing.](https://www.youtube.com/watch?v=b7tVNS7IoGM)
 
 #### CSS Reference (used that I was not super familar with)
 - margin is outside border, padding is inside

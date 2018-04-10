@@ -40,7 +40,7 @@ projects:
 - {name: KibbleCount, description: 'Minimize the Cost, Constrain the Calories with Linear Programming.', url: 'https://devpost.com/software/kibblecount', folder: 'kibblecount', thumb: 'homepage.jpg'}
 - {name: Free-Hands Input, description: 'Using intuitive controls with gestures and voice, control a web browser and many other applications.', url: 'https://devpost.com/software/freehandsbrowser', folder: 'handsfreebrowser', thumb: 'handsfree-demo.jpg'}
 - {name: SharkLab Interactive Data Visualization, description: Interactive Data Visualization web application, url: 'https://github.com/sopanhavuth-aka-sam/ATDDproject', folder: 'sharklab', thumb: 'shark-webapp.png'}
-# - {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
+- {name: BeachHacks, description: California State University Intercollegiate Hackathon Media, url: '', folder: 'beachhacks', thumb: 'bh-poster.png'}
 # - {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
 # - {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
 # - {name: Laika, description: Friendly Linode User Interface, url: 'https://devpost.com/software/laika', folder: 'laika', thumb: 'asteroid.png'}
