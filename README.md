@@ -44,6 +44,8 @@ sass:
 - order
 - perspective (where you are from the site.)
 - css shapes utilize how different color borders work: https://jsfiddle.net/D9M2L/1126/
+- text-shadow = (x, y, glow px, color)
+- https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
 
 #### SASS Syntax (- uses indents vs SCSS - uses brackets)
 - `+size(50px)` + is mixin? these are bourbon mixin.

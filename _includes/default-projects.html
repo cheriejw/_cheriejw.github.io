@@ -1,0 +1,29 @@
+<section class="section-project" id="projects">
+	
+	<h3>Projects</h3>
+
+	<div class="project-belt">
+
+		<div class="thumb-wrap">
+			<div class="thumb-container">
+				{% for project in site.data.settings.projects %}
+				<div class="thumb-unit" data-folder="{{project.folder}}" style="background-image: url(/assets/img/projects/{{project.folder}}/{{project.thumb}})">
+					<div class="thumb-overlay">
+						<strong>{{project.name}}</strong>
+						<div class="zoom-icon"></div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="project-wrap">
+			<div class="project-container">
+				<div class="project-return">{% include icons/icon-back.html %}</div>
+				<h4 class="project-title">Project Description</h4>
+				<div class="project-load"></div>
+			</div>
+		</div>
+	</div>
+
+</section>
