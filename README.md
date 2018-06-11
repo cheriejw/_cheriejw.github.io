@@ -43,6 +43,7 @@ sass:
 - [CSS presidence](https://stackoverflow.com/questions/25105736/what-is-the-order-of-precedence-for-css)
 - order
 - perspective (where you are from the site.)
+- css shapes utilize how different color borders work: https://jsfiddle.net/D9M2L/1126/
 
 #### SASS Syntax (- uses indents vs SCSS - uses brackets)
 - `+size(50px)` + is mixin? these are bourbon mixin.

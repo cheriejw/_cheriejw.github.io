@@ -1,6 +1,8 @@
 <header id="header">
 	<div class="overlay">
 
+		<h1><span>{{site.data.settings.title}}</span></h1>
+
 		<nav>
 			{% for item in site.data.settings.menu %}
 
@@ -9,7 +11,7 @@
 			{% endfor %}
 		</nav>
 
-		<h1><span>{{site.data.settings.title}}</span></h1>
-		<p class="kicker">{{site.data.settings.description}}</p>
+		<img class="logo" src="/assets/img/logo.svg" alt="Lostmel Logo">
+
 	</div>
 </header>

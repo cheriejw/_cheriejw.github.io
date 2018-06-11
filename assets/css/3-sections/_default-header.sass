@@ -1,0 +1,49 @@
+header
+	height: 500px
+	@extend %bg-img
+	background:
+		image: url(/assets/img/#{$logo-path}), url(/assets/img/#{$bg-path})
+		size: 55px 55px, cover
+		position: 25px 15px, 50% 50%
+
+	nav
+		float: right
+		margin: 30px 30px 0 0
+
+		a
+			display: inline-block
+			margin-left: 20px
+
+			color: rgba(0,0,0,0.7)
+			@extend %small-bold
+
+			&:hover
+				color: rgba(0,0,0,1)
+
+	h1
+		clear: both
+		text-align: center
+		font:
+			size: 72px
+			weight: 700
+		color: white
+		text-transform: uppercase
+		letter-spacing: 0.03em
+		margin-bottom: 20px		
+		padding-top: 100px
+
+		span
+			display: inline-block
+			padding: 0.3em 0.5em
+			border: white solid 8px
+
+	.kicker
+		text-align: center
+		@extend %small-bold
+		color: white
+		letter-spacing: 0.03em
+		line-height: 1
+
+@media screen and (max-width: 650px)
+	header
+		height: 400px
