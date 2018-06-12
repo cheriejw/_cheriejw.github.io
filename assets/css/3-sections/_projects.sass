@@ -1,100 +1,82 @@
-.section-project
-	overflow-x: hidden //no-sideway scroll.
-
 .project
 	background-color: rgba(123,179,168,1)
 
-.project-belt
-	width: 200%
+.section-project
+	overflow-x: hidden //no-sideway scroll.
+
+.project-row
 	position: relative
-	left: 0%
-	transition: .2s
+	border-bottom: 8px solid white
 
-.thumb-wrap, .project-wrap
-	width: 50%
-	float: left
-
-.thumb-container
-	max-width: 960px
-	margin: 0px auto
-	padding-bottom: 100px
-	+clearfix //...and then clearfixed.
-
-	.thumb-unit
-		display: block //inline anchor tag is inline, height and width disable.
-		width: 25%
-		float: left //float with block display...
+	.software
+		width: 100%
+		height: $project-height
 		position: relative
-		padding-top: 16% //height
-		overflow: hidden
-
-		@media screen and (max-width: 760px)
-			width: 50%
-			padding-top: 20%
-
-		background:
-			position: center center
-			repeat: no-repeat
-			size: cover
-
-		.thumb-overlay
-			+position(absolute, 100% 0px null 0px) //because parent is relative; 100% is hidden
+		div
+			&:hover
+				background-color: rgba(116,116,116,1)
+				background-image: none
+			overflow: hidden
+			background:
+				image: url(/assets/img/sitting.jpg)
+				position: center
+				repeat: no-repeat
+			width: 100%
 			height: 100%
-			background: fade-out($accent, 0.1)
-			transition: .15s
-			text-align: center
+			h1
+				text-align: left
+			
+	.divider
+		width: 54%
+		height: $project-height
+		position: absolute
+		z-index: 20
+		top: 0
+		right: 8px
+		-webkit-clip-path: polygon(0 0, 20% $project-height, 100% $project-height, 100% 0)
+		background-color: white
+
+
+	.art-design
+		width: 54%
+		height: $project-height
+		position: absolute
+		z-index: 20
+		top: 0
+		right: 0
+		-webkit-clip-path: polygon(0 0, 20% $project-height, 100% $project-height, 100% 0)
+		div
+			&:hover
+				background-image: none
+				background-color: rgba(216,216,216,1)
 			display: flex
-			align-items: center
-			justify-content: center
+			flex-direction: column
+			justify-content: flex-end
+			overflow: hidden
+			background:
+				image: url(/assets/img/sitting.jpg)
+				position: center
+				repeat: no-repeat
+			width: 100%
+			height: 100%
+			h1
+				text-align: right
 
-			strong
-				display: block //inline normall block will have padding
-				padding: 0 20px
-				color: white
-				font-weight: 300
-				text-transform: uppercase
-				font-size: 24
-				line-height: 1.2 //tighter and closer together
+.recreational
+	&:hover
+		background-color: pink
+		background-image: none
+	height: 350px
+	width: 100%
+	background:
+		image: url(/assets/img/sitting.jpg)
+		position: center
+		repeat: no-repeat
 
-		&:hover .thumb-overlay
-			+position(absolute, 0% 0px null 0px)
-
-.project-container
-	max-width: 600px
-	margin: 0px auto
-	position: relative //without this absolute svg went with project-belt display
-	display: none //so can toggle show and hide
-
-	h4
-		color: $accent
-		font-weight: 300
-		text-transform: uppercase
-		font-size: 24
-		line-height: 1.2 //tighter and closer together
-		margin: 0 0 20px
-
-	img
-		max-width: 100%
-		margin-bottom: 20px
-
-	.project-return
-		+size(40px)
-		cursor: pointer
-		opacity: 0.5
-		+position(absolute, -8px null null -60px)
-
-
-		path
-			fill: rgba(0,0,0,0.7)
-
-		&:hover 
-			opacity: 1
-
-@media (max-width: 740px)
-	.project-container
-
-		.project-return
-			left: 0px
-
-		h4
-			margin-left: 60px
+.project-title
+	text-transform: uppercase
+	font-size: 55px
+	font-weight: 500
+	color: rgba(255,255,255,.8)
+	padding: 35px 25px 35px 25px
+	margin: 0
