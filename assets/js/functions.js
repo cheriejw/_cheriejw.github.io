@@ -6,17 +6,17 @@ $(function() {
 }); 
 
 function projectSubMenu() {
-  $('.software-contents').on('click', function() {
-    console.log("click");
+  $('.software-contents').on('click', function(e) {
 
-    // Moving stuff out of the way...
-    $('.divider').css('right', '100%');
-    $('.art-design').css('right', '100%');
-    $('.recreational').css('height', '0');
-    $('.software').css('height', '958px');
-    
+    console.log(e);
+    $('.details-overlay').css('display', 'block');
 
   })
+}
+
+function back() {
+  console.log("waht");
+  $('.details-overlay').css('display', 'none');
 }
 
 function clickProjectMenuItem() {
@@ -42,7 +42,7 @@ function clickProjectMenuItem() {
     var subProject = $(event.target).text().toLowerCase();
     console.log(projects[subProject]);
     var html = projects[subProject].map(x => "<li>" + x + "</li>").reduce((acc, curVal) => acc + curVal);
-    $('ul[class$="-submenu"]').html(html) // Fix hack, this changes all the submenus. I only need one. can make a absolute to change that one.
+    $('ul[class$="submenu"]').html(html) // Fix hack, this changes all the submenus. I only need one. can make a absolute to change that one.
   })
 }
 
