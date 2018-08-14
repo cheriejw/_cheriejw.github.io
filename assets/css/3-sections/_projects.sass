@@ -47,7 +47,7 @@
 		div
 			&:hover
 				background-image: none
-				background-color: rgba(216,216,216,1)
+				background-color: rgba(116,116,116,1)
 			display: flex
 			flex-direction: column
 			justify-content: flex-end
@@ -61,7 +61,7 @@
 
 .recreational
 	&:hover
-		background-color: pink
+		background-color: rgba(116,116,116,1)
 		background-image: none
 	height: 350px
 	width: 100%
@@ -87,15 +87,25 @@ ul
 	margin: 0
 	list-style-type: none
 
-.menu
-	li
-		&:hover
-			font-weight: 600
-
 .details-overlay
 	position: absolute
 	z-index: 200
 	height: 958px
 	width: 100%
-	background-color: pink
+	background-color: rgba(116,116,116,1)
 	display: none
+	.overlay-menu
+		display: inline-block
+		width: 38%
+	li
+		&:hover
+			font-weight: 700
+	span 
+		display: inline-block
+		.submenu
+			margin
+			font-size: 18px
+
+
+.active
+	font-weight: 700

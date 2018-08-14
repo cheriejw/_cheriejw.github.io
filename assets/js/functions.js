@@ -1,16 +1,41 @@
 $(function() {
   smoothScroll(1000); // Don't run until document is ready.
   projectSubMenu();
-  clickProjectMenuItem();
-
 }); 
 
 function projectSubMenu() {
+  //TODO: these are redundant and can be optimized.
   $('.software-contents').on('click', function(e) {
 
     console.log(e);
-    $('.details-overlay').css('display', 'block');
 
+    var html = '<button onclick="back()"><<</button><h1 class="project-title">' + 'Software' + '</h1><ul class="overlay-menu"><li>Web Applications</li><li>Mobile Applications</li><li>Hackathon Projects</li><li>Undergrad Projects</li></ul><span><ul class="submenu"></ul></span>';
+    $('.details-overlay').html(html)
+
+    $('.details-overlay').css('display', 'block');
+    clickProjectMenuItem()
+  })
+
+  $('.art-contents').on('click', function(e) {
+
+    console.log(e);
+
+    var html = '<button onclick="back()"><<</button><h1 class="project-title">' + 'Art&Design' + '</h1><ul class="overlay-menu"><li>Wireframes</li><li>Posters/PR Media</li><li>Figure Drawings</li><li>Art Portfolio</li></ul><span><ul class="submenu"></ul></span>';
+    $('.details-overlay').html(html)
+
+    $('.details-overlay').css('display', 'block');
+    clickProjectMenuItem()
+  })
+
+  $('.recreational-contents').on('click', function(e) {
+
+    console.log(e);
+
+    var html = '<button onclick="back()"><<</button><h1 class="project-title">' + 'Art&Design' + '</h1><ul class="overlay-menu"><li>Hardware/PC Builds</li><li>Security/Data Science</li><li>Twitch Streams</li><li>Raspberry Pi Projects</li><li>Programming Problems Notebook (Java)</li></ul><span><ul class="submenu"></ul></span>';
+    $('.details-overlay').html(html)
+
+    $('.details-overlay').css('display', 'block');
+    clickProjectMenuItem()
   })
 }
 
@@ -29,20 +54,21 @@ function clickProjectMenuItem() {
     "wireframes":["md to pdf", "pororift"],
     "posters/pr media":["beachhacks"],
     "figure drawings":["names"],
-    "sketches/doodles":["fanart", "fashion"],
-    "hardware/pc builds":["'Titan: X-series with 1080TI'"],
+    "art portfolio":["fanart", "fashion"],
+    "hardware/pc builds":["'Chronis': X-series with 1080TI"],
     "security&data science":["PicoCTF 2014"],
     "twitch streams":["League of Legends", "Creative: Digital Art", "Creative: Web Development"],
     "raspberry pi projects":["Gogs: Private Git Repository", "Web Host"],
     "programming problems notebook":["leetcode subject 1", "subject 2"]
-
   }
 
-  $('li').on('click', function(event) {
+  $('.details-overlay').find('li').on('click', function(event) {
     var subProject = $(event.target).text().toLowerCase();
-    console.log(projects[subProject]);
+    console.log(projects[subProject]); //the submenu
+    $(this).parent().find('li.active').removeClass('active');
+    $(this).addClass('active');
     var html = projects[subProject].map(x => "<li>" + x + "</li>").reduce((acc, curVal) => acc + curVal);
-    $('ul[class$="submenu"]').html(html) // Fix hack, this changes all the submenus. I only need one. can make a absolute to change that one.
+    $('ul[class$="submenu"]').html(html)
   })
 }
 
