@@ -3,6 +3,7 @@ $(function() {
   projectSubMenu();
 }); 
 
+// add onclicks for three different project categories
 function projectSubMenu() {
   //TODO: these are redundant and can be optimized.
   $('.software-contents').on('click', function(e) {
@@ -31,11 +32,11 @@ function projectSubMenu() {
 
     console.log(e);
 
-    var html = '<button onclick="back()"><<</button><h1 class="project-title">' + 'Art&Design' + '</h1><ul class="overlay-menu"><li>Hardware/PC Builds</li><li>Security/Data Science</li><li>Twitch Streams</li><li>Raspberry Pi Projects</li><li>Programming Problems Notebook (Java)</li></ul><span><ul class="submenu"></ul></span>';
-    $('.details-overlay').html(html)
+    var html = '<button onclick="back()"><<</button><h1 class="project-title">' + 'Recreational' + '</h1><ul class="overlay-menu"><li>Hardware/PC Builds</li><li>Security/Data Science</li><li>Twitch Streams</li><li>Raspberry Pi Projects</li><li>Programming Problems Notebook (Java)</li></ul><span><ul class="submenu"></ul></span>';
+    $('.details-overlay').html(html);
 
     $('.details-overlay').css('display', 'block');
-    clickProjectMenuItem()
+    clickProjectMenuItem();
   })
 }
 
@@ -44,6 +45,7 @@ function back() {
   $('.details-overlay').css('display', 'none');
 }
 
+//set listener when clicking into the project in the menu after selecting type.
 function clickProjectMenuItem() {
   var projects = {
     "web applications": ["kibblecount", "preoperational planning", "sharklabs"],
@@ -56,10 +58,10 @@ function clickProjectMenuItem() {
     "figure drawings":["names"],
     "art portfolio":["fanart", "fashion"],
     "hardware/pc builds":["'Chronis': X-series with 1080TI"],
-    "security&data science":["PicoCTF 2014"],
+    "security/data science":["PicoCTF 2014"],
     "twitch streams":["League of Legends", "Creative: Digital Art", "Creative: Web Development"],
     "raspberry pi projects":["Gogs: Private Git Repository", "Web Host"],
-    "programming problems notebook":["leetcode subject 1", "subject 2"]
+    "programming problems notebook (java)":["leetcode subject 1", "subject 2"]
   }
 
   $('.details-overlay').find('li').on('click', function(event) {
@@ -67,8 +69,15 @@ function clickProjectMenuItem() {
     console.log(projects[subProject]); //the submenu
     $(this).parent().find('li.active').removeClass('active');
     $(this).addClass('active');
+    // populate the html with <li> for each of the item in the projects subproject.
     var html = projects[subProject].map(x => "<li>" + x + "</li>").reduce((acc, curVal) => acc + curVal);
     $('ul[class$="submenu"]').html(html)
+    
+    // add listeners for click on all the projects
+    $('ul[class$="submenu"]').find('li').on('click', function(event) {
+      let projectFileName = $(event.target).text().toLowerCase().replace(" ", "-");
+      //render the file to the small box.
+    })
   })
 }
 
@@ -115,4 +124,3 @@ function workLoad () {
     $('.project-title').text(newTitle);
   })
 }
-
