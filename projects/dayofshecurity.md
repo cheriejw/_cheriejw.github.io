@@ -17,7 +17,7 @@ Burp Suite (useful new tools I learned)
 
 ### Resources from Day Of Shecurity
 [Opening Ceremony](https://www.youtube.com/watch?v=fgtbxDNBIac)
-[BrainBabe]()
+[BrainBabe](https://brainbabe.org/)
 
 ### Retrospective
 
