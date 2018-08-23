@@ -1,4 +1,4 @@
-These are mainly videos because I interpret heard language faster than read language (slow reader), and thanks to [Video Speed Controller plug-in for Chrome](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en) I can speed up that interpretation too.
+_These are mainly videos because I interpret heard language faster than read language (slow reader), and thanks to [Video Speed Controller plug-in for Chrome](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en) I can speed up that interpretation too._
 
 ### Web Development
 [My Favorite JavaScript Talk:](https://www.youtube.com/watch?v=Trurfqh_6fQ) Douglas Crockford does an amazing job talking about the history of JavaScript and it's design.
