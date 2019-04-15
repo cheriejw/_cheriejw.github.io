@@ -1,7 +1,30 @@
 $(function() {
   smoothScroll(1000); // Don't run until document is ready.
+  stickyNavBar();
   projectSubMenu();
 }); 
+
+// apply window.onscroll to add sticky class.
+function stickyNavBar() {
+  // When the user scrolls the page, execute stickyOnScroll 
+  window.onscroll = function() {stickyOnScroll()};
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function stickyOnScroll() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+}
+
 
 // add onclicks for three different project categories
 function projectSubMenu() {
