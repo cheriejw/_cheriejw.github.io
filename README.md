@@ -15,8 +15,6 @@ jekyll serve -w --watch
 
 May need to run `bundle exec jekyll serve -w --watch`.
 
----
-
 ### File System
 For when I am getting back into project
 
