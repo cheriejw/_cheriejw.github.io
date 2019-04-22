@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/cheriejw/cheriejw.github.io.svg?branch=master)](https://travis-ci.org/cheriejw/cheriejw.github.io)
+## Developer Notes
 ### To Run on Local
 
 1) Install [Jekyll.](https://jekyllrb.com)
@@ -25,7 +26,7 @@ For when I am getting back into project
 `assets/img`: Where all the imgs are...
 
 
-### Tutorial Notes
+## Tutorial Notes
 Following [DevTips Jekyll Tutorial](https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI)
 _technology stack choices(sass instead of scss, flexbox, bourbon - sass toolset)_
 
@@ -111,7 +112,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 ```
-
 
 ### Customizing Rules
 - Project name in `/assets/img/projects/` has to be the same as project name in `/projects/` HTML file, so JQuery can load the right project.
