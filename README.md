@@ -18,10 +18,10 @@ May need to run `bundle exec jekyll serve -w --watch`.
 ### File System
 For when I am getting back into project
 
-`_includes`: Where all the written main html lives.
-`assets/css/3-sections`: Where all the written css for the html above lives.
-`assets/js/functions.js`: Where all the js lives that adds the css classes to the elements.
-`assets/img`: Where all the imgs are...
+- `_includes`: Where all the written main html lives.
+- `assets/css/3-sections`: Where all the written css for the html above lives.
+- `assets/js/functions.js`: Where all the js lives that adds the css classes to the elements.
+- `assets/img`: Where all the imgs are...
 
 
 ## Tutorial Notes
